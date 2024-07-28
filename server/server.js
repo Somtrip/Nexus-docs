@@ -14,7 +14,7 @@ mongoose.connect( MONGO_URI, {
 
 const io = require("socket.io")(PORT, {
   cors: {
-    origin: "http://localhost:3000",
+    origin: "https://nexus-docs.onrender.com",
     methods: ["GET", "POST"],
   },
 })
