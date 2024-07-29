@@ -9,7 +9,7 @@ mongoose.connect( MONGO_URI)
 
 const io = require("socket.io")(PORT, {
   cors: {
-    origin: "https://google-docs-clone-ten-fawn.vercel.app",
+    origin: "https://nexus-docs-five.vercel.app",
     methods: ["GET", "POST"],
   },
 })
