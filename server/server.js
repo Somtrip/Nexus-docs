@@ -5,12 +5,7 @@ require('dotenv').config();
 const PORT = process.env.PORT || 3001;
 const MONGO_URI = process.env.MONGO_URI;
 
-mongoose.connect( MONGO_URI, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-  useFindAndModify: false,
-  useCreateIndex: true,
-})
+mongoose.connect( MONGO_URI)
 
 const io = require("socket.io")(PORT, {
   cors: {
